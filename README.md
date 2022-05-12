@@ -1,6 +1,5 @@
 # 🍨 scoop-av 🍨
 
-[![Excavator](https://github.com/ivaquero/scoopet/actions/workflows/schedule.yml/badge.svg)](https://github.com/ivaquero/scoopet/actions/workflows/schedule.yml)
 [![license](https://img.shields.io/github/license/zzhaq/scoop-av)](https://img.shields.io/github/license/zzhaq/scoop-av)
 [![repo size](https://img.shields.io/github/repo-size/zzhaq/scoop-av)](https://img.shields.io/github/repo-size/zzhaq/scoop-av)
 
@@ -14,7 +13,7 @@ A Scoop Bucket. [Scoop](https://github.com/ScoopInstaller/Scoop)
 For ones familiar with Scoop:
 
 ```powershell
-scoop bucket add scoopet https://github.com/ivaquero/scoopet
+scoop bucket add scoop-av https://github.com/zzhaq/scoop-av
 ```
 
 # To Start
@@ -44,7 +43,7 @@ Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.
 
 ### Step 4: Glance at quick-start by `scoop help`
 
-For more information, please visit Scoop official site at 👉 https://scoop.sh/ 👈
+For more information, please visit Scoop official site at 👉 <https://scoop.sh/> 👈
 
 ## Install Apps from this bucket
 
@@ -66,7 +65,7 @@ if you are using VPN, you need to turn off aria2 before installing Apps
 scoop config aria2-enabled false
 ```
 
-### Step 3: Add this wonderful bucket and update, mo-mo-da~ :kiss:
+### Step 3: Add this wonderful bucket and update
 
 ```powershell
 scoop bucket add scoopet https://github.com/ivaquero/scoopet
