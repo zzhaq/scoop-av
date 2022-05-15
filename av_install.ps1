@@ -60,32 +60,76 @@ try {
   Write-Warning "Failed to disable Windows Defender"
 }
 
-
-
-
 # Attempt to Set Environment Variable
 Write-Host "[+] Attemptting to Set Environment Variable.."
 $env:SCOOP='E:\Applications\Scoop'
 $env:SCOOP_GLOBAL='E:\GlobalScoopApps'
 [Environment]::SetEnvironmentVariable('SCOOP_GLOBAL', $env:SCOOP_GLOBAL, 'Machine')
 
-# Attempt to download scoop isntall script to scoop.ps1
-Write-Host "[+] Attemptting to download scoop isntall script to scoop.ps1.."
-$DownResult = ""
-do
-{
-  try {
-    iwr get.scoop.sh -outfile 'scoop.ps1'
-	$DownResult = "succ"
-  } catch {
-  Write-Warning "Failed to download scoop.ps1"
-  $DownResult = "fail"
-  }
-}
-while ($DownResult -ne "succ")
+#installing scoop....
 
-# Attempt to isntall scoop use of scoop.ps1
-Write-Host "[+] Attemptting to install scoop.."
+$CONFIG_PATH=".\scoop.ps1"
+$TRUE_FALSE=(Test-Path $CONFIG_PATH)
+
+if($TRUE_FALSE -eq "True"){
+  Write-Host "[+] scoop.ps1 is exist,installing scoop.."
+  
+}else{
+  Write-Host "[+] scoop.ps1 is not exist,downlaoding scoop.ps1...."
+  $DownResult = ""
+  do
+  {
+    try {
+      iwr get.scoop.sh -outfile 'scoop.ps1'
+      $DownResult = "succ"
+    } catch {
+      Write-Warning "Failed to download scoop.ps1"
+      $DownResult = "fail"
+    }
+  }
+  while ($DownResult -ne "succ")
+}
 .\scoop.ps1 -RunAsAdmin
-#iwr get.scoop.sh | iex
-#IEX (New-Object Net.WebClient).DownloadString('https://github.com/zzhaq/scoop-av/Scoop.ps1')
+#Write-Host "[+] scoop.ps1 is exist,installing scoop.."
+#.\scoop.ps1 -RunAsAdmin
+
+
+scoop install git                 #Main
+
+#add bucket
+scoop bucket add Extras
+scoop bucket add Java
+scoop bucket add scoop-av https://github.com/zzhaq/scoop-av.git
+
+#isntall tools
+#Pre-installed tools
+scoop install 7zip                #Main
+
+
+
+#Android
+scoop install oraclejdk           #Java
+scoop install apktool             #Main
+scoop install axmlprinter         #scoop-av
+scoop install baksmali            #scoop-av
+scoop install bytecode-viewer     #scoop-av
+scoop install cfr                 #scoop-av
+scoop install classyshark         #scoop-av
+scoop install dex2jar             #scoop-av
+scoop install gda                 #scoop-av
+scoop install jadx                #Extras
+scoop install jd-cmd              #scoop-av
+scoop install luyten              #scoop-av
+scoop install recaf               #scoop-av
+scoop install smali               #scoop-av
+
+#PE tools
+scoop install cff-explorer        #scoop-av
+
+
+#Utilities
+
+#debuggers
+scoop install x64dbg              #Extras
+scoop install scdbg               #scoop-av
+scoop install ollydbg2            #scoop-av

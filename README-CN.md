@@ -1,4 +1,4 @@
-# 🍨 Scoopet 🍨
+# 🍨 scoop-av 🍨
 
 [![license](https://img.shields.io/github/license/zzhaq/scoop-av)](https://img.shields.io/github/license/zzhaq/scoop-av)
 [![repo size](https://img.shields.io/github/repo-size/zzhaq/scoop-av)](https://img.shields.io/github/repo-size/zzhaq/scoop-av)
