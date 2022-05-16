@@ -3,129 +3,74 @@
 [![license](https://img.shields.io/github/license/zzhaq/scoop-av)](https://img.shields.io/github/license/zzhaq/scoop-av)
 [![repo size](https://img.shields.io/github/repo-size/zzhaq/scoop-av)](https://img.shields.io/github/repo-size/zzhaq/scoop-av)
 
-一个用于 Windows 最佳包管理器 [Scoop](https://github.com/ScoopInstaller/Scoop)
+一个用于windows的最佳包管理器。 [Scoop](https://github.com/ScoopInstaller/Scoop)
 
 <p align="left">
 <a href="README.md">English</a> |
 <a href="README-CN.md">简体中文</a>
 </p>
 
-对于熟悉 Scoop 的用户：
+# 安装 Scoop
 
+## 第一步: 在 PowerShell中启用策略
+
+* 以管理员权限打开 `PowerShell`
+  
 ```powershell
-scoop bucket add scoop-av https://github.com/zzhaq/scoop-av
+set-executionpolicy Unrestricted -scope currentuser
 ```
 
-# running: 开始
-
-## 安装 Scoop
-
-### 步骤 1：在 PowerShell 中打开远程权限
+## 第二部：自定义scoop 安装路径
 
 ```powershell
-Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+$env:SCOOP='E:\Applications\Scoop'
+$env:SCOOP_GLOBAL='E:\GlobalScoopApps'
+[Environment]::SetEnvironmentVariable('SCOOP_GLOBAL', $env:SCOOP_GLOBAL, 'Machine')
 ```
 
-### 步骤 2：自定义 Scoop 安装目录
+> 如果您跳过此步骤，所有用户安装的应用程序和 Scoop 都将存在 `c:/users/user_name/scoop`.
+
+## 第三步：下载和安装Scoop
 
 ```powershell
-$env:SCOOP='Your_Scoop_Path'
-[Environment]::SetEnvironmentVariable('SCOOP', $env:SCOOP, 'User')
+iwr get.scoop.sh -outfile 'scoop.ps1'
+.\scoop.ps1 -RunAsAdmin
 ```
 
-> 如果跳过该步骤， Scoop 将默认把所有用户安装的 App 和 Scoop 本身置于`c:/users/user_name/scoop`
-
-### 步骤 3：下载并安装 Scoop
+## 第四步: 从 scoop-av 包中安装应用
 
 ```powershell
-Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+scoop install aria2    #安装 Aria2 加速下载（可选）
+scoop install git      #安装 Git 以添加新的存储库
+
+scoop bucket add scoop-av https://github.com/zzhaq/scoop-av   #add
+scoop install xxx
 ```
 
-### 步骤 4：通过`scoop help`查看快速上手方法
+# 使用 scoop 在虚拟机中安装自定义工具 av-tools
 
-更多信息，请访问 Scoop 官网 👉 <https://scoop.sh/> 👈
+## 先决条件
 
-## 利用扩展库安装 App
+* 创建和配置新的 Windows 虚拟机
+  * av-tools 设计初衷是要安装在 Windows 7 Service Pack 1 或更高版本上
+  * 确保 VM 已完全更新，您可能需要检查更新、重新启动并再次检查，直到不再存在未安装的更新
+  
+* 从以下链接安装 .NET 4.5 和 WMF 5.1:
+  * .NET 4.5 [https://www.microsoft.com/en-us/download/details.aspx?id=30653](https://www.microsoft.com/en-us/download/details.aspx?id=30653)
+  * WMF 5.1  [https://www.microsoft.com/en-us/download/details.aspx?id=54616](https://www.microsoft.com/en-us/download/details.aspx?id=54616)
+  * 确保重新启动 VM 以完成安装
+* 为您的机器拍摄快照！
 
-### 步骤 1：安装 Aria2 来加速下载
+## 在 PowerShell中启用策略
 
+* 以管理员权限打开 `PowerShell`
+  
 ```powershell
-scoop install aria2
+set-executionpolicy Unrestricted -scope currentuser
 ```
 
-如果使用 VPN，需要通过如下命令关闭 aria2
+## 安装 scoop 和 av-tools
 
 ```powershell
-scoop config aria2-enabled false
-```
-
-### 步骤 2：安装 Git 来添加新仓库
-
-```powershell
-scoop install git
-```
-
-### 步骤 3：添加本仓库并更新
-
-```powershell
-scoop bucket add scoop-av https://github.com/zzhaq/scoop-av
-scoop update
-```
-
-### 步骤 4：安装 App
-
-- 使用 `scoop search` 命令搜索 App 的具体名称
-
-```powershell
-scoop search <app_name>
-```
-
-- 利用插件`scoop-completion`协助安装
-
-```powershell
-scoop install scoop-completion
-scoop install <app_name>
-```
-
-> 使用`scoop-completion`：键入 App 名称的前几个字母后敲击`tab`键进行补全
-
-### 步骤 5：查看官方推荐仓库
-
-```powershell
-scoop bucket known
-
-main [默认]
-extras [墙裂推荐]
-versions
-nightlies
-nirsoft
-php
-nerd-fonts
-nonportable
-java
-games
-jetbrains
-```
-
-## 其他
-
-### Aria2 的参数自定义
-
-```powershell
-# aria2 在 Scoop 中默认开启
-scoop config aria2-enabled true
-# 关于以下参数的作用，详见aria2的相关资料
-scoop config aria2-retry-wait 4
-scoop config aria2-split 16
-scoop config aria2-max-connection-per-server 16
-scoop config aria2-min-split-size 4M
-```                                            |
-
-## 备注
-
-由于 Win 到权限管理复杂，对于一些常见的不提供 portable 安装包，且需要管理员应用的权限，建议使用 WinGet 进行安装
-
-```powerhsell
-scoop install winget
-winget install Tencent.QQ
+./av_install.ps1
 ```

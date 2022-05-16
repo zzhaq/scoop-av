@@ -10,111 +10,67 @@ A Scoop Bucket. [Scoop](https://github.com/ScoopInstaller/Scoop)
 <a href="README-CN.md">简体中文</a>
 </p>
 
-For ones familiar with Scoop:
+# Install Scoop
 
+## Step 1: Enable policy in PowerShell
+
+* Open `PowerShell` as an Administrator
+  
 ```powershell
-scoop bucket add scoop-av https://github.com/zzhaq/scoop-av
+set-executionpolicy Unrestricted -scope currentuser
 ```
 
-# To Start
-
-## Install Scoop
-
-### Step 1: Enable remote policy in PowerShell
+## Step 2: Customize your Scoop directory
 
 ```powershell
-Set-ExecutionPolicy RemoteSigned -scope CurrentUser
-```
-
-### Step 2: Customize your Scoop directory
-
-```powershell
-$env:SCOOP='Your_Scoop_Path'
-[Environment]::SetEnvironmentVariable('SCOOP', $env:SCOOP, 'User')
+$env:SCOOP='E:\Applications\Scoop'
+$env:SCOOP_GLOBAL='E:\GlobalScoopApps'
+[Environment]::SetEnvironmentVariable('SCOOP_GLOBAL', $env:SCOOP_GLOBAL, 'Machine')
 ```
 
 > If you skip this step, all user installed Apps and Scoop itself will live in `c:/users/user_name/scoop`.
 
-### Step 3: Download and install Scoop
+## Step 3: Download and install Scoop
 
 ```powershell
-Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+iwr get.scoop.sh -outfile 'scoop.ps1'
+.\scoop.ps1 -RunAsAdmin
 ```
 
-### Step 4: Glance at quick-start by `scoop help`
-
-For more information, please visit Scoop official site at 👉 <https://scoop.sh/> 👈
-
-## Install Apps from this bucket
-
-### Step 1: Install Aria2 to accelerate downloading
+## step 4: Install Apps from scoop-av bucket
 
 ```powershell
-scoop install aria2
+scoop install aria2    #Install Aria2 to accelerate downloading (optional)
+scoop install git      #Install Git to add new repositories
+
+scoop bucket add scoop-av https://github.com/zzhaq/scoop-av   #add
+scoop install xxx
 ```
 
-### Step 2: Install Git to add new repositories
+# Install custom av-tools in a virtual machine using scoop
 
+## Prerequisites
+
+* Create and configure a new Windows Virtual Machine
+  * av-tools is designed to be installed on Windows 7 Service Pack 1 or newer
+  * Ensure VM is updated completely. You may have to check for updates, reboot, and check again until no more remain
+  
+* Install .NET 4.5 and WMF 5.1 from the following links:
+  * .NET 4.5 [https://www.microsoft.com/en-us/download/details.aspx?id=30653](https://www.microsoft.com/en-us/download/details.aspx?id=30653)
+  * WMF 5.1  [https://www.microsoft.com/en-us/download/details.aspx?id=54616](https://www.microsoft.com/en-us/download/details.aspx?id=54616)
+  * Make sure you restart the VM to complete the installation
+* Take a snapshot of your machine!
+
+## Enable policy in PowerShell
+
+* Open `PowerShell` as an Administrator
+  
 ```powershell
-scoop install git
+set-executionpolicy Unrestricted -scope currentuser
 ```
 
-if you are using VPN, you need to turn off aria2 before installing Apps
+## Install scoop and av-tools
 
 ```powershell
-scoop config aria2-enabled false
-```
-
-### Step 3: Add this wonderful bucket and update
-
-```powershell
-scoop bucket add scoopet https://github.com/ivaquero/scoopet
-scoop update
-```
-
-### :rocket: Step 4: Install Apps
-
-- Check the exact name of App by `scoop search`
-
-```powershell
-scoop search <app_name>
-```
-
-- Install Apps with assistance of plugin `scoop-completion`
-
-```powershell
-scoop install scoop-completion
-scoop install <app_name>
-```
-
-> to use `scoop-completion`, just to hit `tab` after initial letters of App names
-
-### Step 5: List the official recommended buckets by `scoop bucket known`
-
-```powershell
-scoop bucket known
-
-main [default]
-extras [strongly recommended]
-versions
-nightlies
-nirsoft
-php
-nerd-fonts
-nonportable
-java
-games
-jetbrains
-```
-
-## Trivial
-
-### Tweak with Parameters in Aria2
-
-```powershell
-scoop config aria2-enabled true
-scoop config aria2-retry-wait 4
-scoop config aria2-split 16
-scoop config aria2-max-connection-per-server 16
-scoop config aria2-min-split-size 4M
+./av_install.ps1
 ```

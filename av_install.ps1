@@ -93,7 +93,7 @@ if($TRUE_FALSE -eq "True"){
 #Write-Host "[+] scoop.ps1 is exist,installing scoop.."
 #.\scoop.ps1 -RunAsAdmin
 
-
+scoop install aria2               #Main
 scoop install git                 #Main
 
 #add bucket
