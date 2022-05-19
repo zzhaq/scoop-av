@@ -3,7 +3,7 @@
     "description": "A standalone Java Decompiler GUI",
     "homepage": "https://github.com/java-decompiler/jd-gui",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/java-decompiler/jd-gui/releases/download/v1.6.6/jd-gui-windows-1.6.6.zip#/dl.7z",
+    "url": "https://github.com/java-decompiler/jd-gui/releases/download/v1.6.6/jd-gui-windows-1.6.6.zip#dl.7z",
     "hash": "79c231399d3d39d14fce7607728336acb47a6e02e9e1c5f2fa16e2450c0c46cb",
     "bin": "jd-gui.exe",
     "shortcuts": [
@@ -12,8 +12,13 @@
             "Java Decompiler"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://github.com/java-decompiler/jd-gui/releases/download",
+        "re":"jd-gui-windows-([\\d.]+).zip#dl.7z"
+    },
     "autoupdate": {
-        "url": "https://github.com/java-decompiler/jd-gui/releases/download/v$version/jd-gui-windows-$version.zip#/dl.7z"
+        "url": "https://github.com/java-decompiler/jd-gui/releases/download/v$version",
+        "re":"jd-gui-windows-([\\d.]+).zip#dl.7z"
     }
 }
+
