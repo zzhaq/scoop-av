@@ -92,8 +92,8 @@ if($TRUE_FALSE -eq "True"){
 .\scoop.ps1 -RunAsAdmin
 #Write-Host "[+] scoop.ps1 is exist,installing scoop.."
 #.\scoop.ps1 -RunAsAdmin
-
-scoop install aria2               #Main
+Write-Host "[+]Isntall apps.."
+#scoop install aria2               #Main
 scoop install git                 #Main
 
 #add bucket
@@ -103,7 +103,7 @@ scoop bucket add scoop-av https://github.com/zzhaq/scoop-av.git
 
 #isntall tools
 #Pre-installed tools
-scoop install 7zip                #Main
+
 
 
 
