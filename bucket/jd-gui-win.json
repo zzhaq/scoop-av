@@ -9,7 +9,7 @@
     "shortcuts": [
         [
             "jd-gui.exe",
-            "AVtools\\Android"
+            "jd-gui"
         ]
     ],
     "checkver": {
