@@ -103,12 +103,12 @@ scoop bucket add scoop-av https://github.com/zzhaq/scoop-av.git
 
 #isntall tools
 #Pre-installed tools
-
+scoop install oraclejdk           #Java
 
 
 
 #Android
-scoop install oraclejdk           #Java
+scoop install jd-gui              #Extras
 scoop install apktool             #Main
 scoop install axmlprinter         #scoop-av
 scoop install baksmali            #scoop-av
@@ -118,16 +118,22 @@ scoop install classyshark         #scoop-av
 scoop install dex2jar             #scoop-av
 scoop install gda                 #scoop-av
 scoop install jadx                #Extras
-scoop install jd-cmd              #scoop-av
 scoop install luyten              #scoop-av
 scoop install recaf               #scoop-av
 scoop install smali               #scoop-av
+
 
 #PE tools
 scoop install cff-explorer        #scoop-av
 
 
 #Utilities
+scoop install far                 #scoop-av
+scoop install cmder               #Main
+scoop install kmdloader           #scoop-av
+
+
+
 
 #debuggers
 scoop install x64dbg              #Extras
