@@ -5,7 +5,6 @@
     "license": "GPL-3.0-only",
     "url": "https://github.com/zzhaq/Toolbox/blob/master/Kernel-Mode-Driver-Loader.zip",
     "hash": "978cb8032afbef6fdf5c28d4b5d704d9f4c73debd6bd2c2706ae2d4a1550ca6b",
-    "extract_dir": "Kernel-Mode-Driver-Loader",
     "bin": "KernelModeDriverLoader.exe",
     "shortcuts": [
         [
