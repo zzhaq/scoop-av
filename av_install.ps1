@@ -9,7 +9,7 @@ if (-Not $currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Adm
 
 # Check to make sure host is supported
 Write-Host "[+] Checking to make sure Operating System is compatible"
-if (-Not (((Get-WmiObject -class Win32_OperatingSystem).Version -eq "6.1.7601") -or ([System.Environment]::OSVersion.Version.Major -eq 10))){
+if (-Not (((Get-WmiObject -class Win32_OperatingSystem).Version -eq "6.1.7601") -or ([System.Environment]::OSVersion.Version.Major -eq 10))) {
   Write-Host "`t[ERR] $((Get-WmiObject -class Win32_OperatingSystem).Caption) is not supported, please use Windows 7 Service Pack 1 or Windows 10" -ForegroundColor Red
   exit
 } else {
@@ -62,23 +62,22 @@ try {
 
 # Attempt to Set Environment Variable
 Write-Host "[+] Attemptting to Set Environment Variable.."
-$env:SCOOP='E:\Applications\Scoop'
-$env:SCOOP_GLOBAL='E:\GlobalScoopApps'
+$env:SCOOP = 'E:\Applications\Scoop'
+$env:SCOOP_GLOBAL = 'E:\GlobalScoopApps'
 [Environment]::SetEnvironmentVariable('SCOOP_GLOBAL', $env:SCOOP_GLOBAL, 'Machine')
 
 #installing scoop....
 
-$CONFIG_PATH=".\scoop.ps1"
-$TRUE_FALSE=(Test-Path $CONFIG_PATH)
+$CONFIG_PATH = ".\scoop.ps1"
+$TRUE_FALSE = (Test-Path $CONFIG_PATH)
 
-if($TRUE_FALSE -eq "True"){
+if ($TRUE_FALSE -eq "True") {
   Write-Host "[+] scoop.ps1 is exist,installing scoop.."
   
-}else{
+} else {
   Write-Host "[+] scoop.ps1 is not exist,downlaoding scoop.ps1...."
   $DownResult = ""
-  do
-  {
+  do {
     try {
       iwr get.scoop.sh -outfile 'scoop.ps1'
       $DownResult = "succ"
@@ -131,7 +130,7 @@ scoop install cff-explorer        #scoop-av
 scoop install far                 #scoop-av
 scoop install cmder               #Main
 scoop install kmdloader           #scoop-av
-
+scoop install pd                  #scoop-av
 
 
 

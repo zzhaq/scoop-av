@@ -2,7 +2,7 @@
     "version": "1.6.6",
     "description": "A standalone Java Decompiler GUI",
     "homepage": "https://github.com/java-decompiler/jd-gui",
-    "license": "GPL-3.0-only",
+    "license": "MIT",
     "url": "https://github.com/java-decompiler/jd-gui/releases/download/v1.6.6/jd-gui-windows-1.6.6.zip",
     "extract_dir": "jd-gui-windows-1.6.6",
     "bin": "jd-gui.exe",
