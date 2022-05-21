@@ -3,9 +3,8 @@
     "description": "Kernel-Mode Driver Loader",
     "homepage": "https://novirusthanks-kernel-mode-driver-loader.software.informer.com/download/",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/zzhaq/Toolbox/blob/master/kernel-mode-driver-loader-setup.exe",
-    "innosetup": true,
-    "extract_dir": "Files\\NoVirusThanks\\Kernel-Mode Driver Loader",
+    "url": "https://github.com/zzhaq/Toolbox/blob/master/Kernel-Mode-Driver-Loader.zip",
+    "extract_dir": "Kernel-Mode-Driver-Loader",
     "bin": "KernelModeDriverLoader.exe",
     "shortcuts": [
         [
