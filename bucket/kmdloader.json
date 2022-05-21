@@ -1,0 +1,16 @@
+{
+    "version": "1.2",
+    "description": "Kernel-Mode Driver Loader",
+    "homepage": "https://novirusthanks-kernel-mode-driver-loader.software.informer.com/download/",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/zzhaq/Toolbox/blob/master/kernel-mode-driver-loader-setup.exe",
+    "innosetup": true,
+    "bin": "KernelModeDriverLoader.exe",
+    "shortcuts": [
+        [
+            "KernelModeDriverLoader.exe",
+            "KernelModeDriverLoader"
+        ]
+    ]
+}
+
