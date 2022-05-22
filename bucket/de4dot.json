@@ -1,0 +1,38 @@
+{
+    "version": "7.6",
+    "description": "de4dot is an open source (GPLv3) .NET deobfuscator and unpacker written in C#.",
+    "homepage": "https://github.com/de4dot/de4dot",
+    "license": "MIT",
+    "url": "https://github.com/zzhaq/Toolbox/releases/download/v1.7/de4dot.zip",
+    "extract_dir": "de4dot",
+    "architecture": {
+        "64bit": {
+            "bin": [
+                "de4dot.exe",
+                "de4dot-x64.exe"
+            ],
+            "shortcuts": [
+                [
+                    "de4dot.exe",
+                    "de4dot"
+                ],
+                [
+                    "de4dot-x64.exe",
+                    "de4dot-x64"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": [
+                "de4dot.exe"
+            ],
+            "shortcuts": [
+                [
+                    "de4dot.exe",
+                    "de4dot"
+                ]
+            ]
+        }
+    }
+}
+

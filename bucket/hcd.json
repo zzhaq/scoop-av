@@ -1,0 +1,16 @@
+{
+    "version": "1.4",
+    "description": "Hash & Crypto Detector",
+    "homepage": "https://github.com/zzhaq/Toolbox/releases",
+    "license": "MIT",
+    "url": "https://github.com/zzhaq/Toolbox/releases/download/v0.5/Hash_Crypto_Detector.v1.4.zip",
+    "extract_dir": "Hash_Crypto_Detector.v1.4",
+    "bin": "HCD.exe",
+    "shortcuts": [
+        [
+            "HCD.exe",
+            "HCD"
+        ]
+    ]
+}
+

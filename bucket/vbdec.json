@@ -1,0 +1,16 @@
+{
+    "version": "1.0",
+    "description": "VB Decompiler",
+    "homepage": "https://github.com/zzhaq/Toolbox/releases",
+    "license": "MIT",
+    "url": "https://github.com/zzhaq/Toolbox/releases/download/v1.4/VBDec.Pro.11.5_Cracked.zip",
+    "extract_dir": "VBDec.Pro.11.5_Cracked",
+    "bin": "VB Decompiler.exe",
+    "shortcuts": [
+        [
+            "VB Decompiler.exe",
+            "VB Decompiler"
+        ]
+    ]
+}
+

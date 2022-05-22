@@ -89,10 +89,9 @@ if ($TRUE_FALSE -eq "True") {
   while ($DownResult -ne "succ")
 }
 .\scoop.ps1 -RunAsAdmin
-#Write-Host "[+] scoop.ps1 is exist,installing scoop.."
-#.\scoop.ps1 -RunAsAdmin
+
 Write-Host "[+]Isntall apps.."
-#scoop install aria2               #Main
+#scoop install aria2              #Main
 scoop install git                 #Main
 
 #add bucket
@@ -106,7 +105,7 @@ scoop install oraclejdk           #Java
 
 
 
-#Android
+#Android & Java
 scoop install jd-gui              #Extras
 scoop install apktool             #Main
 scoop install axmlprinter         #scoop-av
@@ -120,10 +119,8 @@ scoop install jadx                #Extras
 scoop install luyten              #scoop-av
 scoop install recaf               #scoop-av
 scoop install smali               #scoop-av
-
-
-#PE tools
-scoop install cff-explorer        #scoop-av
+scoop install jd-gui-win          #scoop-av
+scoop install javadgui            #scoop-av
 
 
 #Utilities
@@ -138,3 +135,83 @@ scoop install pd                  #scoop-av
 scoop install x64dbg              #Extras
 scoop install scdbg               #scoop-av
 scoop install ollydbg2            #scoop-av
+scoop install 52od                #scoop-av
+
+
+#Anti Rootkit
+scoop install gmer                #scoop-av
+scoop install hrkill              #scoop-av
+scoop install pchunter            #scoop-av
+scoop install powertool           #scoop-av
+scoop install processhacker       #Extras
+
+#cryptograghy
+scoop install hcd                 #scoop-av
+scoop install hashcalc            #scoop-av
+scoop install ka                  #scoop-av
+scoop install pyg                 #scoop-av
+
+#Decompilers
+scoop install delphidec           #scoop-av
+scoop install exe2aut             #scoop-av
+scoop install idr                 #scoop-av
+scoop install flashdec            #scoop-av
+scoop install py2exedec           #scoop-av
+scoop install vbdec               #scoop-av
+
+#Disassemblers
+scoop install c32asm              #scoop-av
+scoop install ida7.6              #scoop-av
+
+
+#dotnet
+scoop install de4net              #scoop-av
+scoop install rundotnetdll        #scoop-av
+scoop install dnspy               #scoop-av
+
+#Editors
+scoop install cmpasm              #scoop-av
+scoop install fileinsight         #scoop-av
+scoop install hxd                 #Extras
+
+#memory forensics
+scoop install readline            #scoop-av
+
+
+#Office
+scoop install officemalscanner    #scoop-av
+scoop install offvis              #scoop-av
+
+
+#PDF
+scoop install pdfdumper           #scoop-av
+
+
+#pentest
+scoop install nmap                #scoop-av
+scoop install layer               #scoop-av
+
+#PE tools
+scoop install cff-explorer        #scoop-av
+scoop isntall die                 #scoop-av
+scoop install flare-floss         #scoop-av
+scoop install exeinfope           #scoop-av
+scoop install importre            #scoop-av
+scoop install loadpe              #scoop-av
+scoop install pexplorer           #scoop-av
+
+
+
+#qax tool
+scoop install qowlscanner         #scoop-av
+scoop install tictool             #scoop-av
+scoop install wlistool            #scoop-av
+
+
+#unpacker
+scoop install upx                 #Main
+
+
+#web Application
+scoop install fiddler            #Extras
+scoop install wireshark          #Extras

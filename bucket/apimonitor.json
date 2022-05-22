@@ -1,0 +1,42 @@
+{
+    "version": "1.0",
+    "description": "apimonitor",
+    "homepage": "https://github.com/zzhaq/Toolbox/releases",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zzhaq/Toolbox/releases/download/v2.5/API.Monitor.rohitab.com.zip",
+            "hash": "5070f625abbcd4706a1a00b181cb0b3eb66f2c55edea38a5301580351af76190",
+            "extract_dir": "API.Monitor.rohitab.com",
+            "bin": [
+                "apimonitor-x86.exe",
+                "apimonitor-x64.exe"
+            ],
+            "shortcuts": [
+                [
+                    "apimonitor-x64.exe",
+                    "apimonitor-x64"
+                ],
+                [
+                    "apimonitor-x86.exe",
+                    "apimonitor-x86"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://github.com/zzhaq/Toolbox/releases/download/v2.5/API.Monitor.rohitab.com.zip",
+            "hash": "5070f625abbcd4706a1a00b181cb0b3eb66f2c55edea38a5301580351af76190",
+            "extract_dir": "WinHex_v19.9",
+            "bin": [
+                "apimonitor-x86.exe"
+            ],
+            "shortcuts": [
+                [
+                    "apimonitor-x86.exe",
+                    "apimonitor-x86"
+                ]
+            ]
+        }
+    }
+    
+}

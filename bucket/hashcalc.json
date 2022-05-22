@@ -1,0 +1,16 @@
+{
+    "version": "1.0",
+    "description": "HashCalc",
+    "homepage": "https://github.com/zzhaq/Toolbox/releases",
+    "license": "MIT",
+    "url": "https://github.com/zzhaq/Toolbox/releases/download/v0.6/HashCalc.zip",
+    "extract_dir": "HashCalc",
+    "bin": "HashCalc.exe",
+    "shortcuts": [
+        [
+            "HashCalc.exe",
+            "HashCalc"
+        ]
+    ]
+}
+

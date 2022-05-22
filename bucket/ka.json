@@ -1,0 +1,16 @@
+{
+    "version": "1.0",
+    "description": "Keygener_Assistant",
+    "homepage": "https://github.com/zzhaq/Toolbox/releases",
+    "license": "MIT",
+    "url": "https://github.com/zzhaq/Toolbox/releases/download/v0.7/Keygener_Assistant.zip",
+    "extract_dir": "Keygener_Assistant",
+    "bin": "keyAssistant Remixed.exe",
+    "shortcuts": [
+        [
+            "keyAssistant Remixed.exe",
+            "keyAssistant Remixed"
+        ]
+    ]
+}
+
