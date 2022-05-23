@@ -134,7 +134,6 @@ scoop install pd                  #scoop-av
 #debuggers
 scoop install x64dbg              #Extras
 scoop install scdbg               #scoop-av
-scoop install ollydbg2            #scoop-av
 scoop install 52od                #scoop-av
 
 
