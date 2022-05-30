@@ -3,8 +3,7 @@
     "description": "WListTool",
     "homepage": "https://github.com/zzhaq/Toolbox/releases",
     "license": "MIT",
-    "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.6/WListTool_R_1.8.1.zip",
-    "extract_dir": "WListTool",
+    "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.6/WListTool_R_1.8.1.zip#dl.7z",
     "bin": "WListTool.exe",
     "shortcuts": [
         [
