@@ -65,7 +65,7 @@ Write-Host "[+] Attemptting to Set Environment Variable.."
 $env:SCOOP = 'E:\Applications\Scoop'
 $env:SCOOP_GLOBAL = 'E:\GlobalScoopApps'
 [Environment]::SetEnvironmentVariable('SCOOP_GLOBAL', $env:SCOOP_GLOBAL, 'Machine')
-[Environment]::SetEnvironmentVariable('SCOOP_GLOBAL', $env:SCOOP, 'Machine')
+[Environment]::SetEnvironmentVariable('SCOOP', $env:SCOOP, 'Machine')
 #installing scoop....
 
 $CONFIG_PATH = ".\scoop.ps1"
