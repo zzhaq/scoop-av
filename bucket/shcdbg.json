@@ -4,7 +4,7 @@
     "homepage": "http://sandsprite.com/blogs/index.php?uid=7&pid=152",
     "license": "MIT",
     "url": "https://github.com/zzhaq/Toolbox/releases/download/v2.7/offvis.zip",
-    "extract_dir": "gui-scdbg",
+    "extract_dir": "offvis",
     "bin": [
         "offvis.exe"
     ],
