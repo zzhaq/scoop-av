@@ -1,7 +1,7 @@
 {
     "homepage": "http://sandsprite.com/blogs/index.php?uid=7&pid=152",
     "version": "10.16.19",
-    "license": "Freeware",
+    "license": "MIT",
     "hash": "792cc76e72336716159c8e174a80d12edbc959f6f454cae0b3f5cec7bfe9a08e",
     "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.7/scdbg.zip",
     "extract_dir": "scdbg",
