@@ -109,7 +109,6 @@ scoop install oraclejdk           #Java
 scoop install jd-gui              #Extras
 scoop install apktool             #Main
 scoop install axmlprinter         #scoop-av
-scoop install baksmali            #scoop-av
 scoop install bytecode-viewer     #scoop-av
 scoop install cfr                 #scoop-av
 scoop install classyshark         #scoop-av
@@ -118,7 +117,6 @@ scoop install gda                 #scoop-av
 scoop install jadx                #Extras
 scoop install luyten              #scoop-av
 scoop install recaf               #scoop-av
-scoop install smali               #scoop-av
 scoop install jd-gui-win          #scoop-av
 scoop install javadgui            #scoop-av
 
@@ -138,7 +136,6 @@ scoop install 52od                #scoop-av
 
 
 #Anti Rootkit
-scoop install gmer                #scoop-av
 scoop install hrkill              #scoop-av
 scoop install pchunter            #scoop-av
 scoop install powertool           #scoop-av
@@ -192,7 +189,7 @@ scoop install layer               #scoop-av
 
 #PE tools
 scoop install cff-explorer        #scoop-av
-scoop isntall die                 #scoop-av
+scoop install die                 #scoop-av
 scoop install flare-floss         #scoop-av
 scoop install exeinfope           #scoop-av
 scoop install importre            #scoop-av

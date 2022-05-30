@@ -2,7 +2,7 @@
     "homepage": "http://sandsprite.com/blogs/index.php?uid=7&pid=152",
     "version": "10.16.19",
     "license": "Freeware",
-    "hash": "66b2e7c8ed93876fe3fc2dc5cfac2dd71006271ac104bca8d72e7889c1e2bdf0",
+    "hash": "e94de9b8031d84ba7980b410b57494ca5ea9957d2bc6f4aee3fa1e341bc43114",
     "url": "http://sandsprite.com/CodeStuff/scdbg.zip",
     "extract_dir": "gcc_scdbg",
     "bin": "scdbg.exe",
