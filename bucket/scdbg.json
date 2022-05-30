@@ -1,0 +1,23 @@
+{
+    "version": "1.0",
+    "description": "scdbg",
+    "homepage": "http://sandsprite.com/blogs/index.php?uid=7&pid=152",
+    "license": "MIT",
+    "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.7/scdbg.zip",
+    "hash": "ef832941b8fc737710dbceb8f0352bae5ea83b2dcd17f76d5b8fbd1275ce57cf",
+    "extract_dir": "scdbg",
+    "bin": [
+        "scdbg.exe",
+        "gui-launcher.exe"
+    ],
+    "shortcuts": [
+        [
+            "scdbg.exe", 
+            "scdbg"
+        ],
+        [
+            "gui-launcher.exe",
+            "gui-launcher"
+        ]
+    ]
+}
