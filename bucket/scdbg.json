@@ -3,7 +3,7 @@
     "description": "scdbg",
     "homepage": "http://sandsprite.com/blogs/index.php?uid=7&pid=152",
     "license": "MIT",
-    "url": "https://github.com/zzhaq/Toolbox/releases/download/v2.7/offvis.zip",
+    "url": "https://github.com/zzhaq/Toolbox/releases/download/v0.1/offvis.zip",
     "extract_dir": "offvis",
     "bin": [
         "scdbg.exe",
