@@ -4,7 +4,7 @@
     "license": "Freeware",
     "hash": "e94de9b8031d84ba7980b410b57494ca5ea9957d2bc6f4aee3fa1e341bc43114",
     "url": "http://sandsprite.com/CodeStuff/scdbg.zip",
-    "extract_dir": "scdbg",
+    "extract_dir": "scdbg\\10.16.19\\scdbg",
     "bin": [
         "scdbg.exe",
         "gui-launcher.exe"
