@@ -4,7 +4,7 @@
     "homepage": "http://sandsprite.com/blogs/index.php?uid=7&pid=152",
     "license": "MIT",
     "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.7/haha.zip",
-    "extract_dir": "scdbg",
+    "extract_dir": "haha",
     "bin": [
         "scdbg.exe",
         "gui-launcher.exe"
