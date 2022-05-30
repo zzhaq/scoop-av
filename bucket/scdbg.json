@@ -6,7 +6,7 @@
     "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.7/offvis.zip",
     "extract_dir": "offvis",
     "bin": [
-        "scdbg1.exe",
+        "scdbg.exe",
         "gui-launcher.exe"
     ],
     "shortcuts": [
