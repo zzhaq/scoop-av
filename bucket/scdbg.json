@@ -6,7 +6,7 @@
     "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.7/scdbg.zip#dl.7z",
     "bin": [
         "scdbg.exe",
-        "gui-launcher.exe"
+        "gui_launcher.exe"
     ],
     "shortcuts": [
         [
@@ -14,8 +14,8 @@
             "scdbg"
         ],
         [
-            "gui-launcher.exe",
-            "gui-launcher"
+            "gui_launcher.exe",
+            "gui_launcher"
         ]
     ]
 }
