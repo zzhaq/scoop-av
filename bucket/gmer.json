@@ -3,8 +3,7 @@
     "description": "GMER is an application that detects and removes rootkits .",
     "homepage": "http://www.gmer.net/",
     "license": "MIT",
-    "url": "http://www2.gmer.net/gmer.zip",
-    "extract_dir": "gmer",
+    "url": "http://www2.gmer.net/gmer.zip#dl.7z",
     "bin": "gmer.exe",
     "shortcuts": [
         [
