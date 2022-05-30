@@ -9,7 +9,7 @@
     "bin": [
         "ncat.exe",
         "nmap.exe",
-        "nping"
+        "nping.exe"
     ],
     "shortcuts": [
         [
