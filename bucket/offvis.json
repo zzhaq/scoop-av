@@ -3,8 +3,8 @@
     "description": "idr",
     "homepage": "https://github.com/zzhaq/Toolbox/releases",
     "license": "MIT",
-    "url": "https://github.com/zzhaq/Toolbox/releases/download/v2.7/offvis.zip",
-    "extract_dir": "offvis",
+    "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.7/scdbg-1.0.zip",
+    "extract_dir": "scdbg-1.0",
     "bin": "OffVis.exe",
     "shortcuts": [
         [
