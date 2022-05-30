@@ -3,7 +3,7 @@
     "description": "scdbg",
     "homepage": "http://sandsprite.com/blogs/index.php?uid=7&pid=152",
     "license": "MIT",
-    "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.7/scdbg.zip",
+    "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.7/haha.zip",
     "extract_dir": "scdbg",
     "bin": [
         "scdbg.exe",
