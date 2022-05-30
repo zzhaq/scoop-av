@@ -5,8 +5,7 @@
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zzhaq/Toolbox/releases/download/v2.5/APIMonitor.zip",
-            "extract_dir": "APIMonitor",
+            "url": "https://github.com/zzhaq/Toolbox/releases/download/v2.5/APIMonitor.zip#dl.7z",
             "bin": [
                 "apimonitor-x86.exe",
                 "apimonitor-x64.exe"
@@ -23,8 +22,7 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/zzhaq/Toolbox/releases/download/v2.5/APIMonitor.zip",
-            "extract_dir": "APIMonitor",
+            "url": "https://github.com/zzhaq/Toolbox/releases/download/v2.5/APIMonitor.zip#dl.7z",
             "bin": [
                 "apimonitor-x86.exe"
             ],
