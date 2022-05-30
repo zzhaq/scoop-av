@@ -5,8 +5,8 @@
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zzhaq/Toolbox/releases/download/v2.5/API.Monitor.rohitab.com.zip#dl.7z",
-            "hash": "5070f625abbcd4706a1a00b181cb0b3eb66f2c55edea38a5301580351af76190",
+            "url": "https://github.com/zzhaq/Toolbox/releases/download/v2.5/API.Monitor.rohitab.com.zip",
+            "extract_dir": "API.Monitor (rohitab.com)",
             "bin": [
                 "apimonitor-x86.exe",
                 "apimonitor-x64.exe"
@@ -23,8 +23,8 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/zzhaq/Toolbox/releases/download/v2.5/API.Monitor.rohitab.com.zip#dl.7z",
-            "hash": "5070f625abbcd4706a1a00b181cb0b3eb66f2c55edea38a5301580351af76190",
+            "url": "https://github.com/zzhaq/Toolbox/releases/download/v2.5/API.Monitor.rohitab.com.zip",
+            "extract_dir": "API.Monitor (rohitab.com)",
             "bin": [
                 "apimonitor-x86.exe"
             ],
