@@ -3,8 +3,8 @@
     "description": "scdbg",
     "homepage": "http://sandsprite.com/blogs/index.php?uid=7&pid=152",
     "license": "MIT",
-    "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.7/scdbg1.zip",
-    "extract_dir": "scdbg1",
+    "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.7/offvis.zip",
+    "extract_dir": "offvis",
     "bin": [
         "scdbg1.exe",
         "gui-launcher.exe"
