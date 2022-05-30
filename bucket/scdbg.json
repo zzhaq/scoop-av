@@ -3,8 +3,8 @@
     "version": "10.16.19",
     "license": "MIT",
     "hash": "792cc76e72336716159c8e174a80d12edbc959f6f454cae0b3f5cec7bfe9a08e",
-    "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.7/scdbg.zip",
-    "extract_dir": "scdbg",
+    "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.7/SCDBG.zip",
+    "extract_dir": "SCDBG",
     "bin": [
         "scdbg.exe",
         "gui-launcher.exe"
