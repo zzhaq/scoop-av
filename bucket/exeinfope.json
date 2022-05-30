@@ -5,6 +5,7 @@
     "license": "Freeware",
     "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.8/ExeinfoPe.zip",
     "extract_dir": "ExeinfoPe",
+    "bin": "exeinfope.exe",
     "shortcuts": [
         [
             "exeinfope.exe",
