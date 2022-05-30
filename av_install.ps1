@@ -162,7 +162,6 @@ scoop install ida7.6              #scoop-av
 
 #dotnet
 scoop install de4net              #scoop-av
-scoop install rundotnetdll        #scoop-av
 scoop install dnspy               #scoop-av
 
 #Editors
@@ -195,6 +194,7 @@ scoop install exeinfope           #scoop-av
 scoop install importre            #scoop-av
 scoop install loadpe              #scoop-av
 scoop install pexplorer           #scoop-av
+scoop install reshacker           #scoop-av
 
 
 
