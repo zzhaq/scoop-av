@@ -3,8 +3,7 @@
     "description": "ImportREConstructor",
     "homepage": "https://github.com/zzhaq/Toolbox/releases",
     "license": "MIT",
-    "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.1/ImportREConstructor.1.7e.zip",
-    "extract_dir": "ImportREConstructor.1.7e",
+    "url": "https://github.com/zzhaq/Toolbox/releases/download/v3.1/ImportREConstructor.1.7e.zip#dl.7z",
     "bin": [
         "ImportREC.exe",
         "ImportREC.美化版.exe"
