@@ -92,7 +92,7 @@ if ($TRUE_FALSE -eq "True") {
 
 Write-Host "[+]Isntall apps.."
 #scoop install aria2              #Main
-scoop install git                 #Main
+scoop install git                 #Main      会预安装7zip，但是速度很慢，大概率安装失败，可能需要手工安装
 
 #add bucket
 scoop bucket add Extras
@@ -101,7 +101,7 @@ scoop bucket add scoop-av https://github.com/zzhaq/scoop-av.git
 
 #isntall tools
 #Pre-installed tools
-scoop install oraclejdk           #Java
+#scoop install oraclejdk           #Java       速度太慢，手工安装
 
 
 
@@ -110,13 +110,13 @@ scoop install jd-gui              #Extras
 scoop install apktool             #Main
 scoop install axmlprinter         #scoop-av
 scoop install bytecode-viewer     #scoop-av
-scoop install cfr                 #scoop-av
+#scoop install cfr                 #scoop-av
 scoop install classyshark         #scoop-av
 scoop install dex2jar             #scoop-av
 scoop install gda                 #scoop-av
 scoop install jadx                #Extras
 scoop install luyten              #scoop-av
-scoop install recaf               #scoop-av
+#scoop install recaf               #scoop-av
 scoop install jd-gui-win          #scoop-av
 scoop install javadgui            #scoop-av
 
@@ -138,7 +138,7 @@ scoop install 52od                #scoop-av
 #Anti Rootkit
 scoop install hrkill              #scoop-av
 scoop install pchunter            #scoop-av
-scoop install powertool           #scoop-av
+#scoop install powertool           #scoop-av
 scoop install processhacker       #Extras
 
 #cryptograghy
@@ -152,7 +152,7 @@ scoop install delphidec           #scoop-av
 scoop install exe2aut             #scoop-av
 scoop install idr                 #scoop-av
 scoop install flashdec            #scoop-av
-scoop install py2exedec           #scoop-av
+#scoop install py2exedec           #scoop-av
 scoop install vbdec               #scoop-av
 
 #Disassemblers
@@ -161,7 +161,7 @@ scoop install ida7.6              #scoop-av
 
 
 #dotnet
-scoop install de4net              #scoop-av
+scoop install de4dot              #scoop-av
 scoop install dnspy               #scoop-av
 
 #Editors
@@ -170,7 +170,7 @@ scoop install fileinsight         #scoop-av
 scoop install hxd                 #Extras
 
 #memory forensics
-scoop install readline            #scoop-av
+scoop install redline            #scoop-av
 
 
 #Office
@@ -179,7 +179,7 @@ scoop install offvis              #scoop-av
 
 
 #PDF
-scoop install pdfdumper           #scoop-av
+#scoop install pdfdumper           #scoop-av
 
 
 #pentest
