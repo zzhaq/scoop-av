@@ -179,11 +179,11 @@ scoop install offvis              #scoop-av
 
 
 #PDF
-#scoop install pdfdumper           #scoop-av
+scoop install pdfdumper           #scoop-av
 
 
 #pentest
-scoop install nmap                #scoop-av
+scoop install mynmap                #scoop-av
 scoop install layer               #scoop-av
 
 #PE tools
@@ -199,7 +199,7 @@ scoop install reshacker           #scoop-av
 
 
 #qax tool
-scoop install qowlscanner         #scoop-av
+scoop install qowlscaner         #scoop-av
 scoop install tictool             #scoop-av
 scoop install wlistool            #scoop-av
 
