@@ -130,7 +130,7 @@ scoop install pd                  #scoop-av
 
 
 #debuggers
-scoop install x64dbg              #Extras
+scoop install myx64dbg              #Extras
 scoop install scdbg               #scoop-av
 scoop install 52od                #scoop-av
 
@@ -202,6 +202,8 @@ scoop install reshacker           #scoop-av
 scoop install qowlscaner         #scoop-av
 scoop install tictool             #scoop-av
 scoop install wlistool            #scoop-av
+scoop install scantool            #scoop-av
+scoop install viewclound            #scoop-av
 
 
 #unpacker
@@ -209,5 +211,5 @@ scoop install upx                 #Main
 
 
 #web Application
-scoop install fiddler            #Extras
-scoop install wireshark          #Extras
+scoop install myfiddler            #Extras
+scoop install mywireshark          #Extras
