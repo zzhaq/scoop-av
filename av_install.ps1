@@ -91,7 +91,7 @@ if ($TRUE_FALSE -eq "True") {
 .\scoop.ps1 -RunAsAdmin
 
 Write-Host "[+]Isntall apps.."
-#scoop install aria2              #Main
+scoop install aria2              #Main
 scoop install git                 #Main      会预安装7zip，但是速度很慢，大概率安装失败，可能需要手工安装
 
 #add bucket
@@ -127,7 +127,7 @@ scoop install far                 #scoop-av
 scoop install cmder               #Main
 scoop install kmdloader           #scoop-av
 scoop install pd                  #scoop-av
-scoop install wget
+scoop install mywget
 
 
 
