@@ -95,6 +95,7 @@ Write-Host "[+]Isntall apps.."
 scoop install git                 #Main      会预安装7zip，但是速度很慢，大概率安装失败，可能需要手工安装
 
 #add bucket
+scoop bucket add Main
 scoop bucket add Extras
 scoop bucket add Java
 scoop bucket add scoop-av https://github.com/zzhaq/scoop-av.git
@@ -126,6 +127,7 @@ scoop install far                 #scoop-av
 scoop install cmder               #Main
 scoop install kmdloader           #scoop-av
 scoop install pd                  #scoop-av
+scoop install wget
 
 
 
